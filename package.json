@@ -6,8 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint  \"src/**/*.{js,ts,jsx,tsx,astro}\"",
-    "fix": "eslint  --fix  \"src/**/*.{js,ts,jsx,tsx,astro}\"",
+    "lint": "eslint  \"./**/*.{js,ts,jsx,tsx,astro}\"",
+    "fix": "eslint  --fix  \"./**/*.{js,ts,jsx,tsx,astro}\"",
     "format": "prettier --write . --plugin=prettier-plugin-astro"
   },
   "keywords": [
@@ -18,10 +18,18 @@
   ],
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.11.19",
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "@typescript-eslint/parser": "^7.0.1",
     "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-astro": "^0.31.4",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",
     "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0 <19.0.0",
+    "pnpm": ">=8"
   }
 }

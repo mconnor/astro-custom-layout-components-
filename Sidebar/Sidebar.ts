@@ -101,7 +101,7 @@ export default class Sidebar extends HTMLElement {
     this.render()
   }
 
-  attributeChangedCallback(name) {
+  attributeChangedCallback() {
     this.render()
   }
 }

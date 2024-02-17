@@ -9,6 +9,7 @@ module.exports = {
     'plugin:astro/recommended',
     'prettier',
   ],
+
   overrides: [
     {
       // Define the configuration for `.astro` file.
@@ -20,19 +21,17 @@ module.exports = {
       parserOptions: {
         parser: '@typescript-eslint/parser',
         extraFileExtensions: ['.astro'],
+        ecmaVersion: 2020,
+        sourceType: 'module',
       },
-      rules: {
-        'react/react-in-jsx-scope': 'off',
-        'react/jsx-uses-react': 'off',
-        // override/add rules settings here, such as:
-        // "astro/no-set-html-directive": "error"
-      },
+      rules: {},
     },
     // ...
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
+    ecmaVersion: 2020,
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint'],
