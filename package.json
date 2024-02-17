@@ -1,0 +1,23 @@
+{
+  "name": "astro-custom-layout-components",
+  "author": "Michael Connor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint  \"src/**/*.{js,ts,jsx,tsx,astro}\"",
+    "fix": "eslint  --fix  \"src/**/*.{js,ts,jsx,tsx,astro}\"",
+    "format": "prettier --write . --plugin=prettier-plugin-astro"
+  },
+  "keywords": [
+    "webcomponents",
+    "web-components",
+    "polyfill",
+    "shim"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
