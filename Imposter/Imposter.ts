@@ -7,8 +7,6 @@
  * @property {boolean} fixed=false Whether to position the element relative to the viewport
  */
 export default class Imposter extends HTMLElement {
-  render: () => void
-  i: string
   constructor() {
     super()
     this.render = () => {

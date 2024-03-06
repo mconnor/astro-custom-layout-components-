@@ -7,8 +7,6 @@
  * @property {boolean} invert=false Whether to apply an inverted theme. Only recommended for greyscale designs.
  */
 export default class Box extends HTMLElement {
-  render: () => void
-  i: string | undefined
   constructor() {
     super()
     this.render = () => {

@@ -9,8 +9,6 @@
  * @property {boolean} noPad=false Whether the spacing is also applied as padding to the container element
  */
 export default class Cover extends HTMLElement {
-  render: () => void
-  i: string
   constructor() {
     super()
     this.render = () => {

@@ -7,8 +7,6 @@
  * @property {string} space=var(--s1) The space between grid cells
  */
 export default class Grid extends HTMLElement {
-  render: () => void
-  i: string | undefined
   constructor() {
     super()
     this.render = () => {

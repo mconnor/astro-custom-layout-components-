@@ -6,8 +6,6 @@
  * @property {integer} limit=4 A number representing the maximum number of items permitted for a horizontal layout
  */
 export default class Switcher extends HTMLElement {
-  render: () => void
-  i: string | undefined
   constructor() {
     super()
     this.render = () => {

@@ -1,5 +1,4 @@
 ---
-import './Center.css'
 import type { RmUnitType } from '../Types'
 
 type Props = {
@@ -8,11 +7,20 @@ type Props = {
   gutters?: boolean
   intrinsic?: boolean
 }
-const props = Astro.props
+const { max, ...rest } = Astro.props
 ---
 
-<center-l {...props}>
+<center-l max={max} {...rest}>
   <slot />
 </center-l>
 
-<script src="./Center.js"></script>
+<script src="./Center"></script>
+
+<style is:global>
+  center-l {
+    display: block;
+    box-sizing: content-box;
+    margin-inline: auto;
+    max-inline-size: var(--measure);
+  }
+</style>
