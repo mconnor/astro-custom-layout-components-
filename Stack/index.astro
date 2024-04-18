@@ -5,7 +5,7 @@ type Props = {
   recursive?: boolean //false
   splitAfter?: number // no default. The element after which to split the stack with an auto margin
 }
-const { space = 'var(--s1)', recursive = false, splitAfter } = Astro.props
+const { space = 'var(--s1)', recursive, splitAfter } = Astro.props
 ---
 
 <stack-l space={space} recursive={recursive} splitAfter={splitAfter}>

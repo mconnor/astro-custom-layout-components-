@@ -9,13 +9,13 @@ export default class Frame extends HTMLElement {
     super()
     this.render = () => {
       if (this.children.length !== 1) {
-        throw new Error('<frame-l> elements should have just one child element')
+        console.warn('<frame-l> elements should have just one child element')
       }
       this.i = `Frame-${[this.ratio].join('')}`
       this.dataset.i = this.i
       if (!document.getElementById(this.i)) {
-        const ratio = this.ratio.split(':')
-        const styleEl = document.createElement('style')
+        let ratio = this.ratio.split(':')
+        let styleEl = document.createElement('style')
         styleEl.id = this.i
         styleEl.innerHTML = `
           [data-i="${this.i}"] {
@@ -34,7 +34,7 @@ export default class Frame extends HTMLElement {
   }
 
   set ratio(val) {
-    this.setAttribute('ratio', val)
+    return this.setAttribute('ratio', val)
   }
 
   static get observedAttributes() {
